@@ -8,3 +8,6 @@ Azure Quantum Development Kit (QDK)
 Caso a extensão foi corretamente instalada o @EntryPoint deve conter as opções de execução
 
 ![image](https://github.com/user-attachments/assets/7fb3aafd-5e6f-4700-af28-98a22b9220bf)
+
+### Circuit
+![image](https://github.com/user-attachments/assets/fa46418d-5c79-423e-b02f-061163a50415)
