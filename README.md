@@ -6,4 +6,5 @@ Azure Quantum Development Kit (QDK)
 
 ## 2. Após a instalação, reiniciar o vscode e abrir um arquivo em Q# (.qs)
 Caso a extensão foi corretamente instalada o @EntryPoint deve conter as opções de execução
+
 ![image](https://github.com/user-attachments/assets/7fb3aafd-5e6f-4700-af28-98a22b9220bf)
