@@ -9,7 +9,7 @@ Caso a extensão foi corretamente instalada o @EntryPoint deve conter as opçõe
 
 ![image](https://github.com/user-attachments/assets/7fb3aafd-5e6f-4700-af28-98a22b9220bf)
 
-## 3. Opções Run | Histogram | Estimate | Debug | Circuit
+## 3. Opções
 
 ### 3.4 Run
 Executa o código e exibe os resultados no terminal
