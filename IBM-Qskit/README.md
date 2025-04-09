@@ -1,4 +1,4 @@
-# Qiskit
+# Tutorial de Instalação do Qiskit
 O nome "Qiskit" é um termo geral que se refere a uma coleção de softwares para desenvolvimento de algoritmos e circuitos quanticos, permitindo a execução do software simulando um hardware quantico localmente ou acessando serviços de nuvem da IBM pelo Qiskit Runtime e executando o software em Unidades de Processamento Quântico Reais (QPUs).
 &nbsp;
 
