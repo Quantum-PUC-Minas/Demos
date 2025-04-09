@@ -3,7 +3,7 @@ Qiskit é uma coleção de softwares para desenvolvimento de algoritmos e circui
 &nbsp;
 
 &nbsp;
-## Instale Ferramentas Essenciais
+## Ferramentas Essenciais
 
 ### 🐍 Python
 Consulte a seção "Linguagem de Programação" na página [Qiskit PyPI](https://pypi.org/project/qiskit/) para determinar quais versões do Python são suportadas pela versão mais recente do Qiskit. Instale o Python em https://www.python.org/dow
