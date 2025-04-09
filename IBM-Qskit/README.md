@@ -1,9 +1,9 @@
 # Tutorial de Instalação do Qiskit
-O nome "Qiskit" é um termo geral que se refere a uma coleção de softwares para desenvolvimento de algoritmos e circuitos quanticos, permitindo a execução do software simulando um hardware quantico localmente ou acessando serviços de nuvem da IBM pelo Qiskit Runtime e executando o software em Unidades de Processamento Quântico Reais (QPUs).
+Qiskit é uma coleção de softwares para desenvolvimento de algoritmos e circuitos quanticos, permitindo a simulação de um hardware quantico localmente ou acessar serviços de nuvem da IBM pelo Qiskit Runtime e executando o software em Unidades de Processamento Quântico Reais (QPUs).
 &nbsp;
 
 &nbsp;
-## Ferramentas Essenciais
+## Instale Ferramentas Essenciais
 
 ### 🐍 Python
 Consulte a seção "Linguagem de Programação" na página [Qiskit PyPI](https://pypi.org/project/qiskit/) para determinar quais versões do Python são suportadas pela versão mais recente do Qiskit. Instale o Python em https://www.python.org/dow
@@ -32,30 +32,27 @@ pip install qiskit-ibm-runtime
 ```
 
 ### 🟡 Jupyter
-Extensão do VSCODE com Shell interativo 
-
+Shell interativo (ou [Anaconda](https://www.anaconda.com/docs/getting-started/anaconda/main) se preferir)
+```
+pip install jupyter
+```
+Ou instale a extensão no VSCODE
 https://marketplace.visualstudio.com/items/?itemName=ms-toolsai.jupyter
 &nbsp;
 
 
 &nbsp;
-## QPU'S
+## Computação Quântica em Nuvem
 Uma unidade de processamento quântico [QPU](https://www.ibm.com/think/topics/qpu) é um tipo de hardware de processamento de última geração que usa qubits (bits quânticos) para resolver problemas complexos usando a mecânica quântica. 
 
 <img src="https://github.com/user-attachments/assets/ceb5015a-53f9-4899-b58f-58264e7de4ab" alt="drawing" width="500" height="250"/>
 <img src="https://github.com/user-attachments/assets/b83f823b-1c2b-4da9-9d5f-ec12c6c50ce9" alt="drawing" width="500" height="250"/>
-&nbsp;
-
-&nbsp;
-## Acesso a QPU's pela Nuvem
-Você pode realizar computações nas unidades de processamento quântico (QPUs) da IBM® usando o canal da IBM Quantum Platform ou da IBM Cloud®. Neste tutorial iremos utilizar IBM Quantum Platform, que possui o
-[Plano Open Gratuito](https://www.ibm.com/quantum/pricing), que permite executar seus circuitos quânticos nas melhores QPUs do mundo gratuitamente.
+<br><br/>
+Você pode realizar computações nas unidades de processamento quântico (QPUs) da IBM® usando o canal da IBM Quantum Platform ou da IBM Cloud®. Neste tutorial iremos utilizar IBM Quantum Platform, que possui o Plano Open Gratuito, permitindo executar seus circuitos quânticos nas melhores QPUs do mundo gratuitamente.
+<br><br/>
 
 > [!NOTE]
-> O plano permite até 10 minutos de processamento quantico por mês
-
-> [!WARNING]
-> Antes de configurar a IBM Quantum Platform, certifique-se de ter o Qiskit SDK e o Qiskit Runtime instalados.
+> O Plano Open permite até 10 minutos de processamento quantico por mês
 &nbsp;
 
 &nbsp;
