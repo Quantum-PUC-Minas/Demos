@@ -1,5 +1,5 @@
 # Tutorial de Instalação do Qiskit
-Qiskit é uma coleção de softwares para desenvolvimento de algoritmos e circuitos quanticos, permitindo a simulação de um hardware quantico localmente ou acessar serviços de nuvem da IBM pelo QiskitRuntime e executando o software em Unidades de Processamento Quântico Reais (QPUs).
+Qiskit é uma coleção de softwares para desenvolvimento de algoritmos e circuitos quanticos, permitindo a simulação de um hardware quantico localmente ou acessar serviços de nuvem da IBM e executar o software em Unidades de Processamento Quântico Reais (QPUs).
 &nbsp;
 
 &nbsp;
