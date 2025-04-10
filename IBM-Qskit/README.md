@@ -2,7 +2,6 @@
 Qiskit é uma coleção de softwares para desenvolvimento de algoritmos e circuitos quanticos, permitindo a simulação de um hardware quantico localmente ou acessar serviços de nuvem da IBM e para computação em Processamento Quântico Reais (QPUs).
 &nbsp;
 
-&nbsp;
 ## Ferramentas Essenciais
 
 ### 🐍 Python
@@ -12,6 +11,7 @@ Verifique a versão do Python no com o comando:
 ```
 python --version
 ```
+
 
 ### ⚙️ SDK
 Instale o Qiskit SDK para ter acesso a todas as ferramentas de desenvolvimento:
@@ -31,8 +31,8 @@ Instale o Qiskit Runtime para acessar os recursos de computação em nuvem da IB
 pip install qiskit-ibm-runtime
 ```
 
-### 🟡 Jupyter
-Shell interativo (ou [Anaconda](https://www.anaconda.com/docs/getting-started/anaconda/main) se preferir)
+### 🟡 Jupyter 
+Shell interativo para seu ambiente python (ou [Anaconda](https://www.anaconda.com/docs/getting-started/anaconda/main) se preferir)
 ```
 pip install jupyter
 ```
