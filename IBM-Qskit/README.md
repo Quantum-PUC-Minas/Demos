@@ -13,7 +13,7 @@ Verifique a versão do Python no com o comando:
 python --version
 ```
 
-### ⚙️ Qiskit SDK
+### ⚙️ SDK
 Instale o Qiskit SDK para ter acesso a todas as ferramentas de desenvolvimento:
 ```
 pip install qiskit
