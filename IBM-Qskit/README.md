@@ -1,9 +1,8 @@
-# Tutorial de Instalação do Qiskit
+# Tutorial de Instalação do Qiskit no VSCode
 Qiskit é uma coleção de softwares para desenvolvimento de algoritmos e circuitos quanticos, permitindo a simulação de um hardware quantico localmente ou acessar serviços de nuvem da IBM e para computação em Processamento Quântico Reais (QPUs).
 &nbsp;
 
 &nbsp;
-
 ## 🐍 Instalar o Python
 Consulte a seção "Linguagem de Programação" na página [Qiskit PyPI](https://pypi.org/project/qiskit/) para determinar quais versões do Python são suportadas pela versão mais recente do Qiskit. Instale o Python em https://www.python.org/dow
 
@@ -12,12 +11,14 @@ Consulte a seção "Linguagem de Programação" na página [Qiskit PyPI](https:/
   ```
   python --version
   ```
-> [!Note]
-> A distribuição padrão do Python já possui um gerenciador de ambientes virtuais chamado [venv](https://python.land/virtual-environments/virtualenv). Para um melhor controle dos pacotes instalados é possível usar outras distribuições do Python como Anaconda ou Miniconda
-&nbsp;
+- Também é importante instalar a extensão do vscode 
+
+  <img src="https://github.com/user-attachments/assets/8feacfb0-a29e-4d48-a331-083881ec425b" alt="drawing" width="300"/>
+<br/>
+
+⚠️ A distribuição padrão do Python já possui um gerenciador de ambientes virtuais chamado [venv](https://python.land/virtual-environments/virtualenv). Para um melhor controle dos pacotes instalados é possível      usar outras distribuições do Python como Anaconda ou Miniconda
 
 &nbsp;
-
 ## 🖥 Criando um Ambiente Virtual em Python no VSCode
 Um ambiente virtual Python é uma cópia isolada do interpretador Python, bibliotecas e scripts. Ele é criado em uma subpasta de um projeto e é útil para evitar conflitos entre versões de pacotes.
 
@@ -35,35 +36,36 @@ Um ambiente virtual Python é uma cópia isolada do interpretador Python, biblio
   <img src="https://github.com/user-attachments/assets/a1abd74c-b45b-4cc5-97db-204b1286dd40" alt="drawing" width="400"/>
 
 
-- 4 Abrir um novo terminal para ver o seu ambiente funcionando
+- 4 Verifique se o interpretador foi alterado para o ambiente novo
+
+  Pressione `Control + Shift + P`
+  
+  Pesquise por `Python Select Interpreter` e selecione `myenv`
+  
+  <img src="https://github.com/user-attachments/assets/b1f160dc-82fe-4842-8bba-4fccdbe89912" alt="drawing" width="400"/>
+
+  
+- 5 Abra um novo terminal para ver o seu ambiente funcionando
   
   <img src="https://github.com/user-attachments/assets/84e59251-ded3-49c8-a330-f0a5fac62565" alt="drawing" width="600"/>
   
 
-  ⚠️ Se não funcionar é porque o ambiente foi criado porém ainda não está ativo, digite
+  Se não funcionar, talvez o ambiente foi criado porém ainda não está ativo, rode o comando
   ```
   activate
    ```
-- 4 No canto direito inferior podemos controlar qual ambiente estaremos utilizando
   
-  <img src="https://github.com/user-attachments/assets/a2678453-f8cf-4d25-97a9-0704ffb3100f" alt="drawing" width="400"/>
-  
-- 5 Para Excluir um ambiente virtual é necessário desativa-lo antes, senão o vscode pode ficar travado nele
+- 6 Se quiser excluir um ambiente virtual é necessário desativa-lo antes, senão o vscode pode ficar travado nele
   ```
   deactivate
   ```
-  e depos
   ```
-  # If your virtual environment is in a directory called 'venv':
+  # depois de desativar
   rm -r venv
   ```
 <br/>
 
 ## Instalação de Ferramentas Essenciais
-
-### 🐍 Extensão Python
-🛠 Instale a extensão do VSCODE 
-https://marketplace.visualstudio.com/items/?itemName=ms-python.python
 
 ### ⚙️ SDK
 Instale o Qiskit SDK para ter acesso a todas as ferramentas de desenvolvimento:
@@ -84,14 +86,13 @@ Instale o Qiskit Runtime para acessar os recursos de computação em nuvem da IB
 pip install qiskit-ibm-runtime
 ```
 
-### 🟡 Jupyter 
-Shell interativo para seu ambiente python
-```
-pip install jupyter
-```
-🛠 Instale a extensão no VSCODE
-https://marketplace.visualstudio.com/items/?itemName=ms-toolsai.jupyter
-&nbsp;
+### 🟡 Jupyter Notebook
+Shell interativo para executar o código e ver os resultados no seu ambiente isolado
+
+- 🛠 Instale a extensão no VSCODE 
+
+  ![image](https://github.com/user-attachments/assets/342068ab-665d-4d35-b1ae-b26a4a87ba59)
+
 
 &nbsp;
 ## Computação Quântica em Nuvem
@@ -153,6 +154,24 @@ Você pode realizar computações nas unidades de processamento quântico (QPUs)
 - Se o ambiente não for confiável, é recomendado utilizar a chave no código normalmente e depois reseta-la no site da IBM
   
   ![thsdth](https://github.com/user-attachments/assets/f924c40a-05a1-4d80-a6f5-0db4824a3683)
+
+&nbsp;
+
+&nbsp;
+## Instalando o Kernel com Jupyter
+Um kernel Python é um componente essencial que serve como mecanismo computacional para executar código. Ele é responsável por executar o código contido em um notebook e retornar a saída para a interface do notebook. Precisamos ter kernels Python separados, pois podemos trabalhar em projetos diferentes com requisitos e tecnologias variadas. 
+
+  - Logo iremos usar o [ipykernel](https://pypi.org/project/ipykernel/) 
+  ```python
+  pip install ipykernel 
+  ```
+
+  - Agora é possível abrir o terminal do Jupyter
+    
+    - <img src="https://github.com/user-attachments/assets/811cecb6-ce0d-4c90-97ce-60202c4cade2" width="400"/>   
+  
+    - <img src="https://github.com/user-attachments/assets/cc870e98-556f-4857-b88e-9642901a78b8" width="400"/>
+<br/>
 
 &nbsp;
 
@@ -225,6 +244,9 @@ Se você estiver trabalhando em um ambiente Python confiável (como um laptop ou
 
 - ## Primitivas
   ```(qiskit.primitives)``` - O módulo que contém as definições básicas e implementações de referência das primitivas Sampler e Estimator, a partir das quais diferentes fornecedores de hardware quântico podem derivar suas próprias implementações.
+
+  > [!Note]
+> A distribuição padrão do Python já possui um gerenciador de ambientes virtuais chamado [venv](https://python.land/virtual-environments/virtualenv). Para um melhor controle dos pacotes instalados é possível usar outras distribuições do Python como Anaconda ou Miniconda
 
 
 
