@@ -13,7 +13,7 @@ Verifique a versão do Python no com o comando:
 python --version
 ```
 
-### ⚙️ SDK
+### ⚙️ Qiskit SDK
 Instale o Qiskit SDK para ter acesso a todas as ferramentas de desenvolvimento:
 ```
 pip install qiskit
@@ -25,7 +25,7 @@ Instale a ferramenta para pode visualizar os circuitos
 pip install qiskit[visualization]
 ```
 
-### 🔃 Runtime
+### 🔃 Qiskit Runtime
 Instale o Qiskit Runtime para acessar os recursos de computação em nuvem da IBM:
 ```
 pip install qiskit-ibm-runtime
