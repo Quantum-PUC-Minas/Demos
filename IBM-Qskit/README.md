@@ -33,7 +33,7 @@ pip install qiskit-ibm-runtime
 ```
 
 ### 🟡 Jupyter 
-Shell interativo para seu ambiente python (ou [Anaconda](https://www.anaconda.com/docs/getting-started/anaconda/main) se preferir)
+Shell interativo para seu ambiente python
 ```
 pip install jupyter
 ```
@@ -41,6 +41,11 @@ pip install jupyter
 https://marketplace.visualstudio.com/items/?itemName=ms-toolsai.jupyter
 &nbsp;
 
+&nbsp;
+>[!Warning]
+>A distribuição padrão do Python já possui um gerenciador de ambientes virtuais chamado venv <br/>
+>Para um melhor controle dos pacotes instalados é possível usar outras distribuições do Python como Anaconda ou Miniconda
+&nbsp;
 
 &nbsp;
 ## Computação Quântica em Nuvem
@@ -151,7 +156,7 @@ Se você estiver trabalhando em um ambiente Python confiável (como um laptop ou
   result = job.result()
   print(result)
   ```
-  - Resultado esperado ✅
+- Resultado esperado ✅
   ![image](https://github.com/user-attachments/assets/aa431816-84cd-4b44-a78b-ca4aec044f5f)
 
 
