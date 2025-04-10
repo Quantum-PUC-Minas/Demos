@@ -11,7 +11,8 @@ Verifique a versão do Python no com o comando:
 ```
 python --version
 ```
-
+🛠 Instale a extensão do VSCODE
+https://marketplace.visualstudio.com/items/?itemName=ms-python.python
 
 ### ⚙️ SDK
 Instale o Qiskit SDK para ter acesso a todas as ferramentas de desenvolvimento:
@@ -36,7 +37,7 @@ Shell interativo para seu ambiente python (ou [Anaconda](https://www.anaconda.co
 ```
 pip install jupyter
 ```
-Ou instale a extensão no VSCODE
+🛠 Instale a extensão no VSCODE
 https://marketplace.visualstudio.com/items/?itemName=ms-toolsai.jupyter
 &nbsp;
 
