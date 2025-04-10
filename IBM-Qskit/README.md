@@ -2,16 +2,67 @@
 Qiskit é uma coleção de softwares para desenvolvimento de algoritmos e circuitos quanticos, permitindo a simulação de um hardware quantico localmente ou acessar serviços de nuvem da IBM e para computação em Processamento Quântico Reais (QPUs).
 &nbsp;
 
-## Ferramentas Essenciais
+&nbsp;
 
-### 🐍 Python
+## 🐍 Instalar o Python
 Consulte a seção "Linguagem de Programação" na página [Qiskit PyPI](https://pypi.org/project/qiskit/) para determinar quais versões do Python são suportadas pela versão mais recente do Qiskit. Instale o Python em https://www.python.org/dow
 
-Verifique a versão do Python no com o comando:
-```
-python --version
-```
-🛠 Instale a extensão do VSCODE
+- Verifique a versão do Python no com o comando:
+  
+  ```
+  python --version
+  ```
+> [!Note]
+> A distribuição padrão do Python já possui um gerenciador de ambientes virtuais chamado [venv](https://python.land/virtual-environments/virtualenv). Para um melhor controle dos pacotes instalados é possível usar outras distribuições do Python como Anaconda ou Miniconda
+&nbsp;
+
+&nbsp;
+
+## 🖥 Criando um Ambiente Virtual em Python no VSCode
+Um ambiente virtual Python é uma cópia isolada do interpretador Python, bibliotecas e scripts. Ele é criado em uma subpasta de um projeto e é útil para evitar conflitos entre versões de pacotes.
+
+- 1 Para criar um ambiente virtual, na pasta do seu projeto iremos abrir um terminal e digitar o seguinte comando
+  ```
+  python -m venv .myenv
+  ```
+- 2 Será criada uma pasta contendo o seu ambiente virtual, chamado myenv
+  
+  <img src="https://github.com/user-attachments/assets/f52361bf-4c28-4af9-99e5-aa14f8147c5d" alt="drawing" width="300"/>
+
+
+- 3 Após isso irá aparecer a seguinte mensagem, clique em sim:
+ 
+  <img src="https://github.com/user-attachments/assets/a1abd74c-b45b-4cc5-97db-204b1286dd40" alt="drawing" width="400"/>
+
+
+- 4 Abrir um novo terminal para ver o seu ambiente funcionando
+  
+  <img src="https://github.com/user-attachments/assets/84e59251-ded3-49c8-a330-f0a5fac62565" alt="drawing" width="600"/>
+  
+
+  ⚠️ Se não funcionar é porque o ambiente foi criado porém ainda não está ativo, digite
+  ```
+  activate
+   ```
+- 4 No canto direito inferior podemos controlar qual ambiente estaremos utilizando
+  
+  <img src="https://github.com/user-attachments/assets/a2678453-f8cf-4d25-97a9-0704ffb3100f" alt="drawing" width="400"/>
+  
+- 5 Para Excluir um ambiente virtual é necessário desativa-lo antes, senão o vscode pode ficar travado nele
+  ```
+  deactivate
+  ```
+  e depos
+  ```
+  # If your virtual environment is in a directory called 'venv':
+  rm -r venv
+  ```
+<br/>
+
+## Instalação de Ferramentas Essenciais
+
+### 🐍 Extensão Python
+🛠 Instale a extensão do VSCODE 
 https://marketplace.visualstudio.com/items/?itemName=ms-python.python
 
 ### ⚙️ SDK
@@ -19,6 +70,7 @@ Instale o Qiskit SDK para ter acesso a todas as ferramentas de desenvolvimento:
 ```
 pip install qiskit
 ```
+
 
 ### 🧮 Visualização de Circuitos
 Instale a ferramenta para pode visualizar os circuitos
@@ -39,12 +91,6 @@ pip install jupyter
 ```
 🛠 Instale a extensão no VSCODE
 https://marketplace.visualstudio.com/items/?itemName=ms-toolsai.jupyter
-&nbsp;
-
-&nbsp;
->[!Warning]
->A distribuição padrão do Python já possui um gerenciador de ambientes virtuais chamado venv <br/>
->Para um melhor controle dos pacotes instalados é possível usar outras distribuições do Python como Anaconda ou Miniconda
 &nbsp;
 
 &nbsp;
@@ -103,14 +149,16 @@ Você pode realizar computações nas unidades de processamento quântico (QPUs)
 - Resultado esperado ✅
   
   ![image](https://github.com/user-attachments/assets/e370fed8-d9e5-4073-ba32-b6c40c236b20)
+
+- Se o ambiente não for confiável, é recomendado utilizar a chave no código normalmente e depois reseta-la no site da IBM
+  
+  ![thsdth](https://github.com/user-attachments/assets/f924c40a-05a1-4d80-a6f5-0db4824a3683)
+
 &nbsp;
 
 &nbsp;
 ## Salvando as as credenciais em um Ambiente Confiável
-Se você estiver trabalhando em um ambiente Python confiável (como um laptop ou estação de trabalho pessoal), use o método save_account() para salvar suas credenciais localmente. 
-
->[!Warning]
-> Pule para a próxima etapa se não estiver usando um ambiente confiável, como um computador compartilhado ou público, para usar a autenticação do IBM Quantum Platform
+Se você estiver trabalhando em um ambiente Python confiável (como um laptop ou estação de trabalho pessoal), é possível salvar suas credenciais no seu ambiente utilizando o método save_account(). 
 
 - Para usar save_account(), execute python no seu Shell (Anaconda ou Jupyter) e digite o seguinte:
 
@@ -158,8 +206,6 @@ Se você estiver trabalhando em um ambiente Python confiável (como um laptop ou
   ```
 - Resultado esperado ✅
   ![image](https://github.com/user-attachments/assets/aa431816-84cd-4b44-a78b-ca4aec044f5f)
-
-
 
 
 
