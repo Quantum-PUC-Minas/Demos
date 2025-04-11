@@ -168,11 +168,9 @@ Um kernel Python é um componente essencial que serve como mecanismo computacion
 
   - Agora é possível abrir o terminal do Jupyter
     
-    - <img src="https://github.com/user-attachments/assets/811cecb6-ce0d-4c90-97ce-60202c4cade2" width="400"/>   
-  
-    - <img src="https://github.com/user-attachments/assets/cc870e98-556f-4857-b88e-9642901a78b8" width="400"/>
-<br/>
-
+    <img src="https://github.com/user-attachments/assets/811cecb6-ce0d-4c90-97ce-60202c4cade2" width="400"/>   
+    <br/>
+    <img src="https://github.com/user-attachments/assets/cc870e98-556f-4857-b88e-9642901a78b8" width="400"/>
 &nbsp;
 
 &nbsp;
